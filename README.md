@@ -1,6 +1,6 @@
 <<<<<<< HEAD
 
-# caffe-app
+# manage-computer-app
 
 ## Getting started
 
