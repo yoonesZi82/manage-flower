@@ -4,6 +4,7 @@ import DashboardLayout from "@/components/layouts/DashboardLayout";
 
 const page = async () => {
   const user = await checkToken();
+  if (!user) return;
   return (
     <DashboardLayout
       user={user}

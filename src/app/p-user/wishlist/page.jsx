@@ -4,6 +4,7 @@ import WishlistTable from "./components/table/WishlistTable";
 
 const Page = async () => {
   const user = await checkToken();
+  if (!user) return;
 
   return (
     <DashboardLayout
@@ -17,7 +18,7 @@ const Page = async () => {
             : ""
         }
       >
-        {user.wishlist ? (
+        {user && user.wishlist ? (
           <section className="overflow-x-auto">
             <WishlistTable wishlists={user.wishlist} user={user} />
           </section>
