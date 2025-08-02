@@ -30,7 +30,7 @@ function CommentsTab({ id, user }) {
   return (
     <>
       {loading && <Loader />}
-      {error && <p className="text-navbarDashboard text-xl">{error}</p>}
+      {error && <p className="text-sidebarTheme text-xl">{error}</p>}
       {!loading && !error && comments && (
         <div className="gap-16 grid grid-cols-1 desktop:grid-cols-2 laptop:grid-cols-2 mobile:grid-cols-1 tablet:grid-cols-2 pt-10 h-[500px]">
           <div className="flex flex-col gap-2 h-full max-h-[500px] overflow-y-auto">
@@ -38,7 +38,7 @@ function CommentsTab({ id, user }) {
           </div>
           {comments.length === 0 && (
             <div className="flex justify-center items-center bg-sidebarTheme rounded-[8px] h-full max-h-[500px] overflow-y-auto">
-              <p className="text-navbarDashboard text-xl"> کامنتی یافت نشد </p>
+              <p className="text-secondary text-xl"> کامنتی یافت نشد </p>
             </div>
           )}
           {comments.length > 0 && (
@@ -46,7 +46,7 @@ function CommentsTab({ id, user }) {
               {comments.map((comment) => (
                 <>
                   {comment.isAccept && (
-                    <div className="flex flex-col gap-1 bg-navbarDashboard px-3 py-5 rounded-[8px] w-full">
+                    <div className="flex flex-col gap-1 bg-secondary px-3 py-5 rounded-[8px] w-full">
                       <div className="flex justify-between items-center w-full">
                         <div className="flex gap-2">
                           {comment.user.image ? (
@@ -60,7 +60,7 @@ function CommentsTab({ id, user }) {
                               icon={<PiUserBold size={18} />}
                             />
                           )}
-                          <p className="text-contentDashboard text-lg">
+                          <p className="text-sidebarTheme text-lg">
                             {" "}
                             {comment.user.name}{" "}
                           </p>

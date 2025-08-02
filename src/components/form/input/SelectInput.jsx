@@ -33,10 +33,10 @@ const SelectInput = ({
             render={({ field }) => (
               <Select
                 {...field}
-                placeholder={placeholder ? placeholder : null}
+                placeholder={placeholder ? placeholder : "میزان اهمیت تیکت"}
                 onChange={field.onChange}
                 options={newOption ? newOption : option}
-                className="w-full"
+                className="w-full h-full"
               />
             )}
           />
@@ -52,7 +52,7 @@ const SelectInput = ({
       ) : (
         <div className="w-full">
           <Select
-            placeholder={placeholder ? placeholder : null}
+            placeholder={placeholder ? placeholder : "میزان اهمیت تیکت"}
             onChange={onChange}
             options={newOption ? newOption : option}
             className="w-full"

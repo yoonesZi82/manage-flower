@@ -99,11 +99,11 @@ function InvoiceBox({ user }) {
   }
   return (
     <div className="flex flex-col justify-center items-center gap-3 w-full">
-      <div className="desktop:w-1/2 laptop:w-1/2 bg-sidebarTheme rounded-[8px] w-full mobile:w-full tablet:w-full h-full">
-        <header className="flex justify-start items-center gap-2 bg-navbarDashboard p-3 rounded-tl-[8px] rounded-tr-[8px] w-full">
+      <div className="bg-sidebarTheme rounded-[8px] w-full desktop:w-1/2 laptop:w-1/2 mobile:w-full tablet:w-full h-full">
+        <header className="flex justify-start items-center gap-2 bg-secondary p-3 rounded-tl-[8px] rounded-tr-[8px] w-full">
           <span>
             {" "}
-            <PiCreditCardBold color="#d2b48c" size={22} />{" "}
+            <PiCreditCardBold color="#513d4d" size={22} />{" "}
           </span>
           <span className="text-sidebarTheme text-xl"> فاکتور پرداختی </span>
         </header>
@@ -139,7 +139,7 @@ function InvoiceBox({ user }) {
           </div>
         </main>
       </div>
-      <div className="desktop:w-1/2 laptop:w-1/2 w-full mobile:w-full tablet:w-full">
+      <div className="w-full desktop:w-1/2 laptop:w-1/2 mobile:w-full tablet:w-full">
         <Collapse items={items} />
       </div>
     </div>

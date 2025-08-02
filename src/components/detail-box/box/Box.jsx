@@ -10,14 +10,12 @@ const Box = ({ title, value, iconName, link }) => {
     <>
       {link ? (
         <Link href={link}>
-          <div className="flex flex-col gap-1 border-2 border-navbarDashboard hover:bg-navbarDashboard p-[14px] rounded-[8px] w-full transition-all duration-500 group">
-            <p className="text-right text-sidebarTheme text-xm">{value}</p>
+          <div className="group flex flex-col gap-1 hover:bg-secondary p-[14px] border-2 border-sidebarTheme rounded-[8px] w-full transition-all duration-500">
+            <p className="text-sidebarTheme text-xm text-right">{value}</p>
             <div className="flex flex-col gap-1">
               <div className="flex justify-between items-center gap-2">
-                <p className="group-hover:text-sidebarTheme text-navbarDashboard">
-                  {title}
-                </p>
-                <div>{Icon && <Icon size={30} color="#d2b48c" />}</div>
+                <p className="text-sidebarTheme">{title}</p>
+                <div>{Icon && <Icon size={30} color="#513d4d " />}</div>
               </div>
               <div className="flex flex-col justify-start items-start gap-1 w-full">
                 <hr className="border-2 border-sidebarTheme rounded-[8px] w-[55%]" />
@@ -30,12 +28,12 @@ const Box = ({ title, value, iconName, link }) => {
         <motion.div
           animate={{ rotate: 360 }}
           transition={{ duration: 1 }}
-          className="flex flex-col gap-1 border-2 border-navbarDashboard hover:bg-navbarDashboard p-[14px] rounded-[8px] w-full transition-all duration-500 group"
+          className="group flex flex-col gap-1 hover:bg-navbarDashboard p-[14px] border-2 border-navbarDashboard rounded-[8px] w-full transition-all duration-500"
         >
-          <p className="text-right text-sidebarTheme text-xm">{value}</p>
+          <p className="text-sidebarTheme text-xm text-right">{value}</p>
           <div className="flex flex-col gap-1">
             <div className="flex justify-between items-center gap-2">
-              <p className="group-hover:text-sidebarTheme text-navbarDashboard">
+              <p className="text-navbarDashboard group-hover:text-sidebarTheme">
                 {title}
               </p>
               <div>{Icon && <Icon size={30} color="#d2b48c" />}</div>

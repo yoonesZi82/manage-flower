@@ -179,7 +179,11 @@ function Navbar({ isLogin }) {
                   icon: <PiUserBold />,
                 },
                 {
-                  label: <p onClick={showModal}>خروج از حساب کاربری</p>,
+                  label: (
+                    <Link href="#" onClick={showModal} className="text-white">
+                      خروج از حساب کاربری
+                    </Link>
+                  ),
                   key: "sign-out",
                   icon: <PiSignOutBold />,
                 },
@@ -195,24 +199,27 @@ function Navbar({ isLogin }) {
         className={
           !fixTop
             ? "w-full absolute z-[1000] px-2 before:block before:h-[30px]"
-            : "w-full fixed shadow-[0_1px_8px_rgba(0,0,0,0.1)] left-0 top-0 bg-sidebarTheme z-[1000] navbar-animate"
+            : "w-full fixed shadow-[0_1px_8px_rgba(0,0,0,0.1)] left-0 top-0 !text-navbarDashboard bg-sidebarTheme z-[1000] navbar-animate"
         }
       >
         <main
           className={
             !fixTop
-              ? "transition-colors duration-200 bg-sidebarTheme shadow-[0_1px_8px_rgba(0,0,0,0.1)] text-navbarDashboard flex px-[30px] h-[90px] items-center mx-auto my-0 max-w-[1192px] z-[999] justify-between rounded-lg"
-              : "h-[73px] shadow-none transition-colors duration-200 bg-sidebarTheme text-navbarDashboard flex px-[30px] items-center mx-auto my-0 max-w-[1192px] z-[999] justify-between"
+              ? "transition-colors duration-200 bg-sidebarTheme shadow-[0_1px_8px_rgba(0,0,0,0.1)] !text-navbarDashboard flex px-[30px] h-[90px] items-center mx-auto my-0 max-w-[1192px] z-[999] justify-between rounded-lg"
+              : "h-[73px] shadow-none transition-colors duration-200 bg-sidebarTheme !text-navbarDashboard flex px-[30px] items-center mx-auto my-0 max-w-[1192px] z-[999] justify-between"
           }
         >
           <div className="flex justify-around items-center gap-8 mt-1 text-xl">
             <Link href="/cart">
-              <Badge count={orders.length > 0 ? orders.length : 0}>
+              <Badge count={orders.length > 0 ? orders.length : 0} size="small">
                 <PiBasketBold size={20} />
               </Badge>
             </Link>
             <Link href="/wishlist">
-              <Badge count={wishlist.length > 0 ? wishlist.length : 0}>
+              <Badge
+                count={wishlist.length > 0 ? wishlist.length : 0}
+                size="small"
+              >
                 <PiHeartBold size={20} />
               </Badge>
             </Link>
@@ -220,11 +227,9 @@ function Navbar({ isLogin }) {
           <Menu
             mode="horizontal"
             items={items}
-            className="justify-center items-center bg-sidebarTheme shadow-none border-b border-b-none w-[50%] desktop:w-[75%] laptop:w-[75%] mobile:w-[50%] tablet:w-[70%]"
+            className="justify-center items-center bg-sidebarTheme shadow-none border-b border-b-none w-[50%] desktop:w-[75%] laptop:w-[75%] mobile:w-[50%] tablet:w-[70%] !text-navbarDashboard [&_li]:!text-navbarDashboard"
           />
-          <div>
-            <img src="/image/logo.png" alt="Logo" />
-          </div>
+          <p className="font-black text-black text-xl">MY CASE</p>
         </main>
       </div>
       <ShowModal

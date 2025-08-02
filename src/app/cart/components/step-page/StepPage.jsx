@@ -58,7 +58,7 @@ function StepPage({ user }) {
   }));
 
   return (
-    <div className="desktop:px-[163px] laptop:px-[163px] flex flex-col gap-5 mx-auto mb-[50px] px-6 mobile:px-6 tablet:px-6 py-5 w-full">
+    <div className="flex flex-col gap-5 mx-auto mb-[50px] px-6 desktop:px-[163px] laptop:px-[163px] mobile:px-6 tablet:px-6 py-5 w-full">
       <Steps current={current} items={items} />
       <div className="mt-6">{steps[current].content}</div>
       <div className="flex flex-col justify-center items-center gap-3 mt-4 w-full">
@@ -103,7 +103,7 @@ function StepPage({ user }) {
         ) : null}
         {current > 0 && (
           <span
-            className="bg-transparent mx-[8px] border-none text-[16px] text-navbarDashboard underline cursor-pointer"
+            className="bg-transparent mx-[8px] border-none text-[16px] text-textBrown underline cursor-pointer"
             onClick={() => prev()}
           >
             برگشت

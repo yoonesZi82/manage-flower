@@ -9,7 +9,7 @@ function CollapsePart({ model }) {
             key: "1",
             label: "ایا امکان خرید و پرداخت انلاین وجود دارد؟",
             children: (
-              <p className="text-navbarDashboard leading-[26px]">
+              <p className="text-textBrown leading-[26px]">
                 بله, شما در سایت امکان مشاهده تمامی محصولات را دارید و میتوانید
                 با برسی محصول مورد نظر محصول خود را انتخاب کنید و ان را از طریق
                 درگاه پرداخت انلاین با تمامی کارت های عضو شتاب پرداخت کنید
@@ -20,7 +20,7 @@ function CollapsePart({ model }) {
             key: "2",
             label: "چگونه میتوانیم با شما در ارتباط باشیم؟",
             children: (
-              <p className="text-navbarDashboard leading-[26px]">
+              <p className="text-textBrown leading-[26px]">
                 شما هم از طریق فرم بالا میتوانید به ما پیغامی ارسال کنید ک
                 کارشناسان ما در سریع ترین زمان ممکن پاسخگویه شما هستن یا از طریق
                 شبکه های اجتماعی با ما در ارتباط باشید
@@ -31,7 +31,7 @@ function CollapsePart({ model }) {
             key: "3",
             label: "سایت شما از تمامی برند ها استفاده میکند؟",
             children: (
-              <p className="text-navbarDashboard leading-[26px]">
+              <p className="text-textBrown leading-[26px]">
                 بله, سایت ست کافی اکثر برندینگ های قهوه را موجود دارد شما
                 میتوانید انها را جستجو کنید
               </p>
@@ -43,7 +43,7 @@ function CollapsePart({ model }) {
             key: "1",
             label: "درباره ست کافی",
             children: (
-              <p className="text-navbarDashboard leading-[26px]">
+              <p className="text-textBrown leading-[26px]">
                 تجربه‌ای به قدمت چهار نسل و ارتباط مستمر با مصرف کنندگان ضامن
                 این ویژگی‌هاست. از ویژگی‌های بارز مجموعه قهوه ست واردات مواد
                 اولیه راسا به وسیله مدیریت مجموعه و انتخاب بهترین مواد اولیه جهت
@@ -57,7 +57,7 @@ function CollapsePart({ model }) {
             key: "2",
             label: "تجربه ست کافی",
             children: (
-              <p className="text-navbarDashboard leading-[26px]">
+              <p className="text-textBrown leading-[26px]">
                 تجربه‌ای به قدمت چهار نسل و ارتباط مستمر با مصرف کنندگان ضامن
                 این ویژگی‌هاست. از ویژگی‌های بارز مجموعه قهوه ست واردات مواد
                 اولیه راسا به وسیله مدیریت مجموعه و انتخاب بهترین مواد اولیه جهت
@@ -86,7 +86,7 @@ function CollapsePart({ model }) {
         ];
 
   return (
-    <div className="desktop:w-1/2 laptop:w-1/2 mx-auto w-full mobile:w-full tablet:w-[80%]">
+    <div className="mx-auto w-full desktop:w-1/2 laptop:w-1/2 mobile:w-full tablet:w-[80%]">
       <Collapse accordion items={items} />
     </div>
   );

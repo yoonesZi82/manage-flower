@@ -41,12 +41,12 @@ const data = {
     {
       label: "فروش 2023",
       data: [65000, 59000, 80000, 81000, 56000, 55000, 70000],
-      backgroundColor: "#d2b48c",
+      backgroundColor: "#e2dce5",
     },
     {
       label: "فروش 2024",
       data: [70000, 60000, 85000, 90000, 58000, 57000, 72000],
-      backgroundColor: "#C29A64",
+      backgroundColor: "#513d4d",
     },
   ],
 };
@@ -57,7 +57,7 @@ const options = {
     title: {
       display: true,
       text: "مقایسه فروش سالانه",
-      color: "#4b382a",
+      color: "#513d4d",
       font: {
         size: 20,
       },
@@ -77,23 +77,23 @@ const options = {
   scales: {
     x: {
       grid: {
-        color: "#4b382a",
+        color: "#513d4d",
       },
       ticks: {
         font: {
           size: 14,
         },
-        color: "#4b382a",
+        color: "#513d4d",
       },
     },
     y: {
       grid: {
-        color: "#4b382a",
+        color: "#513d4d",
       },
       title: {
         display: true,
         text: "میزان فروش (تومان)",
-        color: "#4b382a",
+        color: "#513d4d",
         font: {
           size: 16,
         },
@@ -102,7 +102,7 @@ const options = {
         font: {
           size: 14,
         },
-        color: "#4b382a",
+        color: "#513d4d",
         callback: (value) => `${value.toLocaleString()} تومان`,
       },
     },

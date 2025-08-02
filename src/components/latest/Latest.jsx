@@ -85,21 +85,21 @@ const Latest = ({ count, pagination, id, wishlist }) => {
   };
   return (
     <div
-      className={`desktop:px-[163px] laptop:px-[163px] mx-auto px-6 mobile:px-6 tablet:px-6 ${
+      className={` laptop:px-[163px] mx-auto px-6 mobile:px-6 tablet:px-6 ${
         pagination ? "py-[50px]" : "py-[50px]"
       } w-full`}
     >
       {pagination && !wishlist ? (
         <section className="flex justify-start items-center">
           <div>
-            <p className="text-4xl text-navbarDashboard">همه محصولات</p>
+            <p className="text-sidebarTheme text-4xl">همه محصولات</p>
             <span className="mt-1 text-sidebarTheme">All products</span>
           </div>
         </section>
       ) : pagination && wishlist ? (
         <section className="flex justify-start items-center">
           <div>
-            <p className="text-4xl text-navbarDashboard">علاقه مندی ها</p>
+            <p className="text-sidebarTheme text-4xl">علاقه مندی ها</p>
             <span className="mt-1 text-sidebarTheme">Wishlist products</span>
           </div>
         </section>
@@ -112,7 +112,7 @@ const Latest = ({ count, pagination, id, wishlist }) => {
             model={1}
           />
           <div>
-            <p className="text-4xl text-navbarDashboard">آخرین محصولات</p>
+            <p className="text-sidebarTheme text-4xl">آخرین محصولات</p>
             <span className="mt-1 text-sidebarTheme">Latest products</span>
           </div>
         </section>
@@ -124,21 +124,18 @@ const Latest = ({ count, pagination, id, wishlist }) => {
           className={
             paginatedProducts.length === 0 || loading || error
               ? " w-full py-5 flex justify-center items-center"
-              : " pt-[50px] place-content-center gap-8 grid grid-cols-1 desktop:grid-cols-4 laptop:grid-cols-3 mobile:grid-cols-1 tablet:grid-cols-2"
+              : " pt-[50px] place-content-center gap-20 grid grid-cols-1 laptop:grid-cols-4 tablet:grid-cols-2"
           }
         >
           {loading && <Loader />}
           {error && (
-            <p className="font-medium text-2xl text-navbarDashboard">
-              {" "}
-              {error}{" "}
-            </p>
+            <p className="font-medium text-sidebarTheme text-2xl"> {error} </p>
           )}
           {pagination &&
             !loading &&
             !error &&
             paginatedProducts.length === 0 && (
-              <p className="font-medium text-2xl text-navbarDashboard">
+              <p className="font-medium text-sidebarTheme text-2xl">
                 {" "}
                 محصولی برای نمایش وجود ندارد{" "}
               </p>
@@ -157,25 +154,20 @@ const Latest = ({ count, pagination, id, wishlist }) => {
           className={
             paginatedProducts.length === 0 || loading || error
               ? " w-full py-5 flex justify-center items-center"
-              : " pt-[50px] place-content-center gap-8 grid grid-cols-1 desktop:grid-cols-4 laptop:grid-cols-3 mobile:grid-cols-1 tablet:grid-cols-2"
+              : "pt-[50px] place-content-center gap-20 grid grid-cols-1 laptop:grid-cols-4 tablet:grid-cols-2"
           }
         >
           {loading && <Loader />}
           {error && (
-            <p className="font-medium text-2xl text-navbarDashboard">
-              {" "}
-              {error}{" "}
-            </p>
+            <p className="font-medium text-sidebarTheme text-2xl"> {error} </p>
           )}
           {pagination &&
             !loading &&
             !error &&
             paginatedProducts.length === 0 && (
               <section className="flex flex-col justify-center items-center gap-3 pt-6 w-full">
-                <PiHeartBold size={150} color="#4b382a" />
-                <p className="text-[48px] text-navbarDashboard">
-                  محصولی یافت نشد
-                </p>
+                <PiHeartBold size={150} color="#513d4d " />
+                <p className="text-[48px] text-sidebarTheme">محصولی یافت نشد</p>
                 <span className="block text-sidebarTheme">
                   شما هنوز هیچ محصولی در لیست علاقه مندی های خود ندارید.
                 </span>
@@ -205,18 +197,15 @@ const Latest = ({ count, pagination, id, wishlist }) => {
           className={
             products.length === 0 || loading || error
               ? " w-full py-5 flex justify-center items-center"
-              : "place-content-center gap-8 grid grid-cols-1 desktop:grid-cols-4 laptop:grid-cols-3 mobile:grid-cols-1 tablet:grid-cols-2 pt-[50px]"
+              : "pt-[50px] place-content-center gap-20 grid grid-cols-1 laptop:grid-cols-4 tablet:grid-cols-2"
           }
         >
           {loading && <Loader />}
           {error && (
-            <p className="font-medium text-2xl text-navbarDashboard">
-              {" "}
-              {error}{" "}
-            </p>
+            <p className="font-medium text-sidebarTheme text-2xl"> {error} </p>
           )}
           {!loading && !error && products.length === 0 && (
-            <p className="font-medium text-2xl text-navbarDashboard">
+            <p className="font-medium text-sidebarTheme text-2xl">
               {" "}
               محصولی برای نمایش وجود ندارد{" "}
             </p>

@@ -12,8 +12,8 @@ const page = async () => {
   return (
     <HomeLayout isLogin={user ? user : false}>
       <Breadcrumb route={"تماس با ما"} />
-      <div className="desktop:px-[163px] laptop:px-[163px] px-6 mobile:px-6 tablet:px-6 pt-[50px] pb-[50px]">
-        <div className="text-right mx-auto mb-16 px-[15px] w-full max-w-[1222px] text-black">
+      <div className="px-6 desktop:px-[163px] laptop:px-[163px] mobile:px-6 tablet:px-6 pt-[50px] pb-[50px]">
+        <div className="mx-auto mb-16 px-[15px] w-full max-w-[1222px] text-black text-right">
           <main className="flex desktop:flex-row laptop:flex-row flex-col mobile:flex-col tablet:flex-col gap-[25px]">
             <section>
               <MapPart position={[35.72021225108499, 51.42222691580869]}>
@@ -49,7 +49,7 @@ const page = async () => {
             </section>
           </main>
         </div>
-        <div className="text-right mx-auto mb-16 px-[15px] w-full max-w-[1222px] text-black">
+        <div className="mx-auto mb-16 px-[15px] w-full max-w-[1222px] text-black text-right">
           <div className="flex desktop:flex-row laptop:flex-row flex-col mobile:flex-col tablet:flex-col justify-between gap-10">
             <FormContact user={user} />
             <Information />

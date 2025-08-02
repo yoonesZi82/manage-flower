@@ -12,8 +12,6 @@ export async function POST(req) {
       longDescription,
       weight,
       score,
-      suitableFor,
-      smell,
       tags,
       img,
     } = body;
@@ -46,15 +44,6 @@ export async function POST(req) {
     if (!score) {
       return Response.json({ message: "Score is not find" }, { status: 404 });
     }
-    if (!suitableFor) {
-      return Response.json(
-        { message: "SuitableFor is not find" },
-        { status: 407 }
-      );
-    }
-    if (!smell) {
-      return Response.json({ message: "Smell is not find" }, { status: 408 });
-    }
     if (!tags) {
       return Response.json({ message: "Tags is not find" }, { status: 409 });
     }
@@ -79,8 +68,6 @@ export async function POST(req) {
         shortDescription,
         longDescription,
         weight,
-        suitableFor,
-        smell,
         tags: tagsArray,
         score,
         number,

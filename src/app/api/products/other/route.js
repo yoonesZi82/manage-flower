@@ -21,24 +21,29 @@ export async function POST(req) {
       return Response.json({ message: "Product Not Found" }, { status: 403 });
     }
 
-    const { smell, suitableFor, id } = product;
+    const { id, tags } = product;
 
-    const otherProducts = await db.product.findMany({
+    const allProducts = await db.product.findMany({
       where: {
-        OR: [{ smell }, { suitableFor }],
-        NOT: { id },
+        id: { not: id },
       },
     });
 
-    if (!otherProducts) {
+    const matchedProducts = allProducts.filter((p) =>
+      p.tags?.some((tag) => tags.includes(tag))
+    );
+
+    if (!matchedProducts) {
       return Response.json(
         { message: "otherProducts Not Found" },
         { status: 403 }
       );
     }
 
-    return Response.json(otherProducts);
+    return Response.json(matchedProducts);
   } catch (err) {
+    console.log(err);
+
     return Response.json(
       { message: `Unknown error in other products API --> ${err}` },
       { status: 500 }

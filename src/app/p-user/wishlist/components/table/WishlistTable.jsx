@@ -84,16 +84,6 @@ export default function WishlistTable({ wishlists, user }) {
       render: (_, record) => <p>{record.weight} گرم</p>,
     },
     {
-      title: "میزان بو",
-      dataIndex: "smell",
-      key: "smell",
-    },
-    {
-      title: "مناسب برای",
-      dataIndex: "suitableFor",
-      key: "suitableFor",
-    },
-    {
       title: "مشاهده / حذف",
       key: "action",
       render: (_, record) => (
@@ -121,8 +111,6 @@ export default function WishlistTable({ wishlists, user }) {
     price: wishlist.product.price,
     image: wishlist.product.img,
     weight: wishlist.product.weight,
-    smell: wishlist.product.smell,
-    suitableFor: wishlist.product.suitableFor,
     description: wishlist.product.longDescription,
   }));
 
@@ -132,7 +120,7 @@ export default function WishlistTable({ wishlists, user }) {
       pagination={{ pageSize: 5 }}
       expandable={{
         expandedRowRender: (record) => (
-          <p className="m-0 line-clamp-2 text-navbarDashboard">
+          <p className="m-0 text-sidebarTheme line-clamp-2">
             {record.description}
           </p>
         ),

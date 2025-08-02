@@ -98,16 +98,6 @@ export default function ProductsTable({ products }) {
       key: "weight",
     },
     {
-      title: "مناسب برای",
-      dataIndex: "suitableFor",
-      key: "suitableFor",
-    },
-    {
-      title: "میزان بو",
-      dataIndex: "smell",
-      key: "smell",
-    },
-    {
       title: "تعداد محصول",
       dataIndex: "count",
       key: "count",
@@ -144,8 +134,6 @@ export default function ProductsTable({ products }) {
     shortDescription: product.shortDescription,
     longDescription: product.longDescription,
     weight: product.weight,
-    suitableFor: product.suitableFor,
-    smell: product.smell,
     count: product.number,
     comments: product.comment.length,
   }));

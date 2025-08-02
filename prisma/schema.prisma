@@ -39,8 +39,6 @@ model Product {
   shortDescription String 
   longDescription  String
   weight  Float
-  suitableFor String
-  smell   String
   score   Float
   img     String
   tags    Json

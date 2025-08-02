@@ -46,8 +46,6 @@ function NewProductForm() {
           });
           reset();
           setError("");
-          setValue("suitableFor", null);
-          setValue("smell", null);
           setValue("image", null);
         }
       })
@@ -83,7 +81,7 @@ function NewProductForm() {
       loading={loading}
       error={error}
     >
-      <div className="desktop:w-1/2 laptop:w-1/2 flex flex-col justify-start items-center gap-4 pt-[25px] pl-[10px] w-full mobile:w-full tablet:w-full h-full min-h-[500px] overflow-y-auto">
+      <div className="justify-start items-center gap-4 grid grid-cols-1 laptop:grid-cols-2 pl-[10px] w-full">
         <div className="flex flex-col gap-3 w-full">
           <NameInput
             control={control}
@@ -109,47 +107,11 @@ function NewProductForm() {
           />
         </div>
         <div className="flex flex-col gap-3 w-full">
-          <MessageInput
-            control={control}
-            error={errors?.longDescription?.message}
-            name={"longDescription"}
-            placeholder={"توضیحات محصول"}
-          />
-        </div>
-        <div className="flex flex-col gap-3 w-full">
           <NameInput
             control={control}
             error={errors?.weight?.message}
             name={"weight"}
             placeholder={"وزن محصول"}
-          />
-        </div>
-        <div className="flex flex-col gap-3 w-full">
-          <SelectInput
-            control={control}
-            error={errors?.suitableFor?.message}
-            name={"suitableFor"}
-            placeholder={"برایه چه افرادی مناسب است"}
-            newOption={subtitleForOptions}
-            onChange={(value) => setValue("suitableFor", value)}
-          />
-        </div>
-        <div className="flex flex-col gap-3 w-full">
-          <SelectInput
-            control={control}
-            error={errors?.smell?.message}
-            name={"smell"}
-            placeholder={"میزان بو محصول"}
-            newOption={smellOptions}
-            onChange={(value) => setValue("smell", value)}
-          />
-        </div>
-        <div className="flex flex-col gap-3 w-full">
-          <UploadInput
-            control={control}
-            error={errors?.image?.message}
-            setValue={setValue}
-            route={"product"}
           />
         </div>
         <div className="flex flex-col gap-3 w-full">
@@ -166,6 +128,22 @@ function NewProductForm() {
             error={errors?.number?.message}
             name={"number"}
             placeholder={"تعداد محصول"}
+          />
+        </div>
+        <div className="flex flex-col gap-3 col-span-1 laptop:col-span-2 w-full">
+          <MessageInput
+            control={control}
+            error={errors?.longDescription?.message}
+            name={"longDescription"}
+            placeholder={"توضیحات محصول"}
+          />
+        </div>
+        <div className="flex flex-col gap-3 col-span-1 laptop:col-span-2 w-full">
+          <UploadInput
+            control={control}
+            error={errors?.image?.message}
+            setValue={setValue}
+            route={"product"}
           />
         </div>
       </div>

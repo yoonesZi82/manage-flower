@@ -14,12 +14,13 @@ module.exports = {
     extend: {
       colors: {
         whiteText: "#e4e6b2",
-        darkBrown: "#34180e",
-        lightBrown: "#3f2616",
-        textBrown: "#3c2415",
-        sidebarTheme: "#d2b48c",
-        navbarDashboard: "#4b382a",
+        darkBrown: "#513D4D",
+        lightBrown: "#513D4D",
+        textBrown: "#513D4D",
+        sidebarTheme: "#513D4D",
+        navbarDashboard: "#ffffff",
         contentDashboard: "#f4f4f4",
+        secondary: "#e2dce5",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

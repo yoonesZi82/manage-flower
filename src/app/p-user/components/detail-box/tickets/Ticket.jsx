@@ -23,17 +23,17 @@ const Ticket = ({ id, title, departmentID, createdAt, hasAnswer }) => {
       }
     >
       {loading && <Loader />}
-      {error && <p className="text-lg text-navbarDashboard"> {error} </p>}
+      {error && <p className="text-navbarDashboard text-lg"> {error} </p>}
       {!loading && !error && department && (
-        <div className="flex flex-col justify-center items-center gap-2 bg-navbarDashboard p-3 rounded-[6px] w-full">
+        <div className="flex flex-col justify-center items-center gap-2 bg-secondary p-3 rounded-[6px] w-full">
           <div className="flex justify-between items-center w-full">
-            <p className="text-base text-sidebarTheme"> {title} </p>
+            <p className="text-sidebarTheme text-base"> {title} </p>
             <p className="text-sidebarTheme text-sm">
               {new Date(createdAt).toLocaleDateString("fa-IR")}
             </p>
           </div>
           <div className="flex justify-between items-center w-full">
-            <p className="text-base text-sidebarTheme"> {department.title} </p>
+            <p className="text-sidebarTheme text-base"> {department.title} </p>
             <p
               className={`text-sm ${
                 hasAnswer ? "text-green-600" : "text-red-500"

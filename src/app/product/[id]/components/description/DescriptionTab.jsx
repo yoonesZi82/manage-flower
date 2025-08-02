@@ -29,7 +29,7 @@ function DescriptionTab({ id }) {
       {loading && <Loader />}
       {error && <p className="text-navbarDashboard text-xl">{error}</p>}
       {!loading && !error && description && (
-        <p className="text-navbarDashboard">{description}</p>
+        <p className="text-sidebarTheme">{description}</p>
       )}
     </div>
   );

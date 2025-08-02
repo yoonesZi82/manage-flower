@@ -12,11 +12,11 @@ function Pay() {
   }, [price]);
   return (
     <div className="flex flex-col justify-center items-center gap-3 w-full">
-      <div className="desktop:w-1/2 laptop:w-1/2 bg-sidebarTheme rounded-[8px] w-full mobile:w-full tablet:w-full h-full">
-        <header className="flex justify-start items-center gap-2 bg-navbarDashboard p-3 rounded-tl-[8px] rounded-tr-[8px] w-full">
+      <div className="bg-sidebarTheme rounded-[8px] w-full desktop:w-1/2 laptop:w-1/2 mobile:w-full tablet:w-full h-full">
+        <header className="flex justify-start items-center gap-2 bg-secondary p-3 rounded-tl-[8px] rounded-tr-[8px] w-full">
           <span>
             {" "}
-            <PiCreditCardBold color="#d2b48c" size={22} />{" "}
+            <PiCreditCardBold color="#513d4d" size={22} />{" "}
           </span>
           <span className="text-sidebarTheme text-xl"> مبلغ نهایی </span>
         </header>
@@ -30,13 +30,13 @@ function Pay() {
           </div>
         </main>
       </div>
-      <div className="desktop:w-1/2 laptop:w-1/2 w-full mobile:w-full tablet:w-full text-center">
+      <div className="w-full desktop:w-1/2 laptop:w-1/2 mobile:w-full tablet:w-full text-center">
         <button
-          class="relative bg-sidebarTheme rounded-[8px] w-48 h-10 font-semibold text-center text-navbarDashboard group"
+          class="group relative bg-sidebarTheme rounded-[8px] w-48 h-10 font-semibold text-navbarDashboard text-center"
           type="button"
         >
-          <div class="group-hover:w-[184px] top-[4px] left-1 z-10 absolute flex justify-center items-center bg-navbarDashboard rounded-[6px] w-1/4 h-8 duration-500">
-            <PiBasketBold size={22} color="#d2b48c" />
+          <div class="top-[4px] left-1 z-10 absolute flex justify-center items-center bg-navbarDashboard rounded-[6px] w-1/4 group-hover:w-[184px] h-8 duration-500">
+            <PiBasketBold size={22} color="#513d4d" />
           </div>
           <p class="translate-x-2">پرداخت کنید</p>
         </button>

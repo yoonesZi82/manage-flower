@@ -14,9 +14,7 @@ const page = async () => {
           subTitle="صفحه ای که دنبالش میگردی اینجاس نیست."
           extra={
             <div className="flex flex-col justify-center items-center gap-2">
-              <h1 className="text-navbarDashboard">
-                صفحه مورد نظر بافت نشد 😔
-              </h1>
+              <h1 className="text-sidebarTheme">صفحه مورد نظر بافت نشد 😔</h1>
               <GlobalBtn
                 title={"برگشت به صفحه اصلی"}
                 link={"/"}

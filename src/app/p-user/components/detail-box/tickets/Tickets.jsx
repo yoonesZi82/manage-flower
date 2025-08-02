@@ -6,9 +6,7 @@ const Tickets = async ({ tickets }) => {
     <DetailUserBox title="تیکت های اخیر" titleButton={"همه تیکت ها"}>
       {tickets.length === 0 ? (
         <div className="flex justify-center items-center w-full h-full">
-          <p className="text-2xl text-center text-navbarDashboard">
-            تیکتی ثبت نشده
-          </p>
+          <p className="text-secondary text-2xl text-center">تیکتی ثبت نشده</p>
         </div>
       ) : (
         <>

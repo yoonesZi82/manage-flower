@@ -56,8 +56,6 @@ export async function GET() {
             shortDescription: true,
             longDescription: true,
             weight: true,
-            smell: true,
-            suitableFor: true,
             score: true,
             tags: true,
             img: true,

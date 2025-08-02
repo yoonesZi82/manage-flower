@@ -192,7 +192,7 @@ export default function TicketsTable({ tickets }) {
         onCancel={() => handleCancel({ modal: "answer" })}
       >
         <div className="flex justify-center items-center p-6 w-full">
-          <p className="text-navbarDashboard">{answerTicket}</p>
+          <p className="text-sidebarTheme">{answerTicket}</p>
         </div>
       </Modal>
       <Table

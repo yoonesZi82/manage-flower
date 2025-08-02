@@ -6,7 +6,7 @@ const ShowOffice = () => {
   return (
     <div className="mx-auto my-0 msx-w-[1222px]">
       <div className="flex flex-col justify-center items-center">
-        <p className="text-[36px] text-navbarDashboard"> همکاران ما </p>
+        <p className="text-[36px] text-sidebarTheme"> همکاران ما </p>
         <span className="text-sidebarTheme">شرکت های جذاب دنیای قهوه</span>
       </div>
       <main className="my-10">

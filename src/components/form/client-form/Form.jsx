@@ -5,12 +5,10 @@ function Form({ title, description, children, handleSubmit, error, loading }) {
   return (
     <>
       <span className="text-sidebarTheme text-sm"> {title} </span>
-      <p className="mt-4 mb-8 text-[22px] text-navbarDashboard">
-        {description}
-      </p>
-      <form onSubmit={handleSubmit} className="flex flex-col gap-6">
+      <p className="mt-4 mb-8 text-[22px] text-sidebarTheme">{description}</p>
+      <form onSubmit={handleSubmit} className="flex flex-col gap-6 w-full">
         {children}
-        <ButtonForm title={"ارسال"} loading={loading} />
+        <ButtonForm title="ارسال" loading={loading} />
         {error && (
           <Alert
             message={error}

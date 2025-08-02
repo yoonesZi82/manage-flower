@@ -18,12 +18,13 @@
 }
 :root {
   --whiteText: #e4e6b2;
-  --darkBrown: #34180e;
-  --lightBrown: #3f2616;
-  --textBrown: #3c2415;
-  --sidebarTheme: #d2b48c;
-  --navbarDashboard: #4b382a;
+  --darkBrown: #fff;
+  --lightBrown: #fff;
+  --textBrown: #fff;
+  --sidebarTheme: #513d4d;
+  --navbarDashboard: #ffffff;
   --contentDashboard: #f4f4f4;
+  --secondary: #e2dce5;
 }
 * {
   box-sizing: border-box;
@@ -334,7 +335,7 @@ a {
 
 /* style promote */
 .club {
-  background-image: url("/image/clubset1.jpg");
+  background-image: url("/image/case2.jpeg");
 }
 /* end style promote */
 
@@ -407,10 +408,6 @@ a {
   overflow-x: auto !important;
 }
 
-.card-table > div > div > div > div > div > table > tbody {
-  background: var(--sidebarTheme) !important;
-}
-
 .card-table > div > div > div > div > div > table > tbody > tr {
   transition: all 200ms;
   &:hover {
@@ -418,7 +415,7 @@ a {
   }
 }
 tbody > tr {
-  color: var(--navbarDashboard) !important;
+  /* color: var(--navbarDashboard) !important; */
   transition: all 500ms;
   &:hover {
     background: var(--navbarDashboard) !important;
@@ -438,3 +435,34 @@ tbody > tr {
   width: 100% !important;
 }
 /* end style uploader */
+
+.anticon-ellipsis {
+  color: var(--navbarDashboard) !important;
+}
+
+.ant-menu-item-active::after,
+.ant-menu-submenu-active::after {
+  border-color: var(--navbarDashboard) !important;
+}
+.ant-menu,
+.ant-menu-sub {
+  & > li {
+    color: var(--navbarDashboard) !important;
+  }
+}
+
+.ant-steps-item-icon {
+  background-color: var(--sidebarTheme) !important;
+  & > span {
+    color: var(--navbarDashboard) !important;
+  }
+}
+
+.ant-pagination-item-active,
+.ant-pagination-item {
+  color: var(--navbarDashboard) !important;
+}
+
+.ant-result-title {
+  color: var(--sidebarTheme) !important;
+}

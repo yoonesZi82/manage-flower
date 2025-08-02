@@ -261,12 +261,12 @@ function DashboardLayout({ howUser, user, children }) {
     <>
       <Layout className="w-screen h-screen">
         <Header className="flex items-center p-0">
-          <div className="flex justify-center items-center bg-navbarDashboard w-[66%] desktop:w-[15%] laptop:w-[23%] mobile:w-[66%] tablet:w-[38%] h-full">
+          <div className="flex justify-center items-center bg-sidebarTheme w-[66%] desktop:w-[15%] laptop:w-[23%] mobile:w-[66%] tablet:w-[38%] h-full">
             <p className="text-white text-base">
               {user ? user.name : "نام"} عزیز خوش اومدی
             </p>
           </div>
-          <div className="flex justify-between items-center bg-navbarDashboard pl-8 w-full">
+          <div className="flex justify-between items-center bg-sidebarTheme pl-8 w-full">
             <div className="flex gap-[12px]">
               <div>
                 {user.image ? (
@@ -275,12 +275,12 @@ function DashboardLayout({ howUser, user, children }) {
                   <Avatar size={50} icon={<PiUserBold />} />
                 )}
               </div>
-              <ul className="flex flex-col justify-center items-center gap-[1px]">
-                <li className="text-white text-lg">
+              <ul className="flex flex-col justify-center items-start gap-[1px]">
+                <li className="text-secondary text-lg">
                   {" "}
                   {user ? user.name : "نام"}{" "}
                 </li>
-                <li className="text-sidebarTheme text-sm">
+                <li className="text-secondary text-xs">
                   {" "}
                   {user
                     ? user.role === "ADMIN"
@@ -356,7 +356,7 @@ function DashboardLayout({ howUser, user, children }) {
               </Button>
               <DynamicBreadcrumb />
             </div>
-            <Content className="bg-[#f4f4f4] shadow-[10px_10px_20px_#babecc,-10px_-10px_20px_#ffffff] m-0 p-6 rounded-[8px] max-w-[1288px] min-h-[280px] max-h-[600px] overflow-x-auto overflow-y-auto">
+            <Content className="bg-[#f4f4f4] shadow-[10px_10px_20px_#babecc,-10px_-10px_20px_#ffffff] m-0 p-6 rounded-[8px] max-w-[1288px] min-h-[280px] overflow-x-auto overflow-y-auto">
               {children}
             </Content>
           </Layout>

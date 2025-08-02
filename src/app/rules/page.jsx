@@ -9,10 +9,10 @@ const page = async () => {
     <HomeLayout isLogin={user ? user : false}>
       <Breadcrumb route={"قوانین"} />
       <div
-        className="desktop:px-[163px] laptop:px-[163px] px-6 mobile:px-6 tablet:px-6 pt-[50px] pb-[100px]"
+        className="px-6 desktop:px-[163px] laptop:px-[163px] mobile:px-6 tablet:px-6 pt-[50px] pb-[100px]"
         data-aos="fade-up"
       >
-        <p className="mb-5 text-justify text-navbarDashboard">
+        <p className="mb-5 text-textBrown text-justify">
           “قهوه ست” ضمن احترامی که برای حریم شخصی کاربران قائل است، برای خرید،
           ثبت نظر یا استفاده از برخی امکانات وب سایت اطلاعاتی را از کاربران
           درخواست می‌کند تا بتواند خدماتی امن و مطمئن را به کاربران ارائه دهد.
@@ -34,7 +34,7 @@ const page = async () => {
           باشند، می‌توانند عضویت دریافت خبرنامه قهوه ست را در پروفایل خود لغو
           کنند.{" "}
         </p>
-        <p className="mb-0 text-justify text-navbarDashboard">
+        <p className="mb-0 text-textBrown text-justify">
           قهوه ست ممکن است نقد و نظرهای ارسالی کاربران را در راستای رعایت قوانین
           وب سایت ویرایش کند. همچنین اگر نظر یا پیام ارسال شده توسط کاربر، مشمول
           مصادیق محتوای مجرمانه باشد، قهوه ست می‌تواند از اطلاعات ثبت شده برای
@@ -51,18 +51,18 @@ const page = async () => {
           خوشایند را برای همه کاربران فراهم آورد. 66726563 – ۰۲۱09366726563{" "}
           <strong>(پاسخگویی طی ساعات کاری)</strong>
         </p>
-        <p className="mb-5 text-justify text-navbarDashboard">
+        <p className="mb-5 text-textBrown text-justify">
           استان تهران – شهر تهران – خیابان انقلاب روبروی خیابان ویلا (نجات الهی)
           فروشگاه قهوه ست
         </p>
-        <p className="mb-5 text-justify text-navbarDashboard">
+        <p className="mb-5 text-textBrown text-justify">
           در صورتی که تمایلی به دریافت ایمیل‌ها و خبرنامه های قهوه ست ندارید٬ می
           توانید بر روی کلمه لغو عضویت در انتهای صفحه ایمیل کلیک کنید.
         </p>
-        <p className="mb-5 text-justify text-navbarDashboard">
+        <p className="mb-5 text-textBrown text-justify">
           در صورت وجود هرگونه سوال٬ لطفا با اطلاعات تماس زیر ارتباط برقرار کنید.
         </p>
-        <p className="mb-5 text-justify text-navbarDashboard">
+        <p className="mb-5 text-textBrown text-justify">
           تلفن تماس و فکس: 66726563 – 021
         </p>
       </div>

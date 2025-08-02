@@ -12,8 +12,6 @@ export async function PUT(req) {
     const longDescription = formData.get("longDescription");
     const weight = Number(formData.get("weight"));
     const score = Number(formData.get("score"));
-    const suitableFor = formData.get("suitableFor");
-    const smell = formData.get("smell");
     const tags = Array(formData.get("tags"));
     const id = Number(formData.get("id"));
     const img = formData.get("img");
@@ -41,15 +39,6 @@ export async function PUT(req) {
     }
     if (!score) {
       return Response.json({ message: "Score is not find" }, { status: 406 });
-    }
-    if (!suitableFor) {
-      return Response.json(
-        { message: "SuitableFor is not find" },
-        { status: 407 }
-      );
-    }
-    if (!smell) {
-      return Response.json({ message: "Smell is not find" }, { status: 408 });
     }
     if (!tags) {
       return Response.json({ message: "Tags is not find" }, { status: 409 });
@@ -82,8 +71,6 @@ export async function PUT(req) {
         shortDescription,
         longDescription,
         weight,
-        suitableFor,
-        smell,
         tags,
         score,
         img: `http://localhost:3000/uploads/${fileName}`,

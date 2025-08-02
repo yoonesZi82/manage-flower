@@ -22,7 +22,7 @@ function GlobalBtn({ title, link, iconName, model, onClick, loading, style }) {
             </Link>
           ) : (
             <Button
-              className={`flex flex-row-reverse w-full justify-center items-center bg-sidebarTheme hover:bg-navbarDashboard py-[18px] border-none text-navbarDashboard hover:text-sidebarTheme transition-colors duration-500 ${style}`}
+              className={`flex flex-row-reverse w-full justify-center items-center bg-sidebarTheme hover:bg-secondary py-[18px] border-none text-secondary hover:text-sidebarTheme transition-colors duration-500 ${style}`}
               icon={Icon && <Icon size={20} />}
               onClick={onClick}
               loading={loading}
@@ -37,7 +37,7 @@ function GlobalBtn({ title, link, iconName, model, onClick, loading, style }) {
           {link ? (
             <Link href={link}>
               <Button
-                className={`flex flex-row-reverse justify-center items-center border-2 border-navbarDashboard bg-transparent hover:bg-navbarDashboard py-[16px] text-navbarDashboard hover:text-sidebarTheme transition-colors duration-500 ${style}`}
+                className={`flex flex-row-reverse justify-center items-center border-2 border-sidebarTheme  bg-transparent hover:bg-sidebarTheme/20 py-[16px] text-sidebarTheme hover:text-sidebarTheme transition-colors duration-500 ${style}`}
                 icon={Icon && <Icon size={20} />}
                 onClick={onClick}
               >
@@ -47,7 +47,7 @@ function GlobalBtn({ title, link, iconName, model, onClick, loading, style }) {
             </Link>
           ) : (
             <Button
-              className={`flex flex-row-reverse w-full justify-center items-center border-2 border-navbarDashboard bg-transparent hover:bg-navbarDashboard py-[16px] text-navbarDashboard hover:text-sidebarTheme transition-colors duration-500 ${style}`}
+              className={`flex flex-row-reverse w-full justify-center items-center  bg-sidebarTheme hover:bg-secondary py-[16px] text-navbarDashboard hover:text-sidebarTheme transition-colors duration-500 ${style}`}
               icon={Icon && <Icon size={20} />}
               onClick={onClick}
               loading={loading}

@@ -12,8 +12,6 @@ const NewProductSchema = z.object({
     .string({ message: "توضیحات بلند را وارد کنید" })
     .min(1, { message: "توضیحات بلند را وارد کنید" }),
   weight: z.string({ message: "وزن را وارد کنید" }),
-  suitableFor: z.string({ message: "برایه چه افرادی مناسب است" }),
-  smell: z.string({ message: "میزان بو را وارد کنید" }),
   image: z
     .string({ message: "عکس را اپلود کنید" })
     .min(1, { message: "عکس را اپلود کنید" }),

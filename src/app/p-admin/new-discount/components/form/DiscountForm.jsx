@@ -83,7 +83,7 @@ function DiscountForm() {
       loading={loading}
       handleSubmit={handleSubmit(createDiscount)}
     >
-      <div className="desktop:w-1/2 laptop:w-1/2 flex flex-col justify-center items-center gap-4 w-full mobile:w-full tablet:w-full">
+      <div className="gap-4 grid grid-cols-1 laptop:grid-cols-2 w-full">
         <div className="flex flex-col gap-3 w-full">
           <NameInput
             control={control}

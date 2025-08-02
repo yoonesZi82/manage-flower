@@ -10,20 +10,20 @@ function Banner() {
     <>
       <Swiper
         rewind={true}
-        autoplay={{ delay: 1500 }}
+        autoplay={{ delay: 3000 }}
         loop={true}
         navigation={true}
         modules={[Navigation, Autoplay]}
-        className="home-slider mySwiper"
+        className="max-h-[800px] home-slider mySwiper"
       >
         <SwiperSlide>
-          <img src="/image/baner1.jpg" alt="slid" />
+          <img src="/image/banner1.jpg" alt="slid" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/image/baner2.jpg" alt="slid" />
+          <img src="/image/banner2.jpg" alt="slid" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/image/baner3.jpg" alt="slid" />
+          <img src="/image/banner3.jpg" alt="slid" />
         </SwiperSlide>
       </Swiper>
     </>

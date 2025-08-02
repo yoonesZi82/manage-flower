@@ -132,18 +132,18 @@ function Detail({ id, user }) {
             <main className="flex flex-col gap-10 px-10">
               <section className="flex flex-col justify-start items-start gap-4 pb-12 border-b-2 border-b-sidebarTheme">
                 <p> صفحه اصلی / محصولات / {product.name} </p>
-                <p className="font-medium text-navbarDashboard text-xl">
+                <p className="font-medium text-sidebarTheme text-xl">
                   {" "}
                   {product.name}{" "}
                 </p>
                 <div className="flex justify-center items-start gap-4">
                   <Rate disabled defaultValue={score} allowHalf />
-                  <span className="font-medium text-navbarDashboard text-sm">
+                  <span className="font-medium text-sidebarTheme text-sm">
                     {" "}
                     تعداد امتیاز دهندگان ({numberUser}){" "}
                   </span>
                 </div>
-                <p className="font-medium text-navbarDashboard text-2xl">
+                <p className="font-medium text-sidebarTheme text-2xl">
                   {product.price.toLocaleString()} تومان
                 </p>
                 <p className="text-ls text-sidebarTheme line-clamp-3">
@@ -155,8 +155,8 @@ function Detail({ id, user }) {
                   {product.number > 0 ? (
                     <>
                       <div className="flex justify-center items-center gap-1">
-                        <PiSmileyBold color="#d2b48c" size={18} />
-                        <p className="font-medium text-navbarDashboard text-sm">
+                        <PiSmileyBold color="#513d4d " size={18} />
+                        <p className="font-medium text-sidebarTheme text-sm">
                           {" "}
                           موجود در انبار{" "}
                         </p>
@@ -169,7 +169,7 @@ function Detail({ id, user }) {
                         <Tooltip title="افزودن به علاقه مندی ها">
                           <PiHeartBold
                             size={20}
-                            color="#d2b48c"
+                            color="#513d4d "
                             className="hover:text-[#dc2626] transition-colors duration-500 cursor-pointer"
                             onClick={addToWishlist}
                           />
@@ -179,8 +179,8 @@ function Detail({ id, user }) {
                   ) : (
                     <>
                       <div className="flex justify-center items-center gap-1">
-                        <PiSmileySadBold color="#d2b48c" size={18} />
-                        <p className="font-medium text-navbarDashboard text-sm">
+                        <PiSmileySadBold color="#513d4d " size={18} />
+                        <p className="font-medium text-sidebarTheme text-sm">
                           {" "}
                           ناموجود{" "}
                         </p>
@@ -188,7 +188,7 @@ function Detail({ id, user }) {
                       <Tooltip title="افزودن به علاقه مندی ها">
                         <PiHeartBold
                           size={20}
-                          color="#d2b48c"
+                          color="#513d4d "
                           className="hover:text-[#dc2626] transition-colors duration-500 cursor-pointer"
                         />
                       </Tooltip>
@@ -196,12 +196,12 @@ function Detail({ id, user }) {
                   )}
                 </div>
                 <div className="w-full">
-                  <span className="font-medium text-navbarDashboard text-lg">
+                  <span className="font-medium text-sidebarTheme text-lg">
                     {" "}
                     تگ ها :{" "}
                   </span>
                   {product.tags.map((tag) => (
-                    <span className="font-medium text-navbarDashboard text-sm">
+                    <span className="font-medium text-sidebarTheme text-sm">
                       {" "}
                       {tag},{" "}
                     </span>
@@ -218,7 +218,7 @@ function Detail({ id, user }) {
                           : setCount((prevCount) => prevCount - 1);
                       }}
                     ></Button>
-                    <div className="px-[7px] py-[5px] border-2 border-sidebarTheme border-r-0 border-l-0 text-navbarDashboard text-sm text-center">
+                    <div className="px-[7px] py-[5px] border-2 border-sidebarTheme border-r-0 border-l-0 text-sidebarTheme text-sm text-center">
                       {count}
                     </div>
                     <Button
@@ -260,7 +260,7 @@ function Detail({ id, user }) {
       <div className="flex flex-col justify-center items-center gap-4 pt-14">
         {!loading && !error && product && (
           <>
-            <p className="text-navbarDashboard text-xl text-center">
+            <p className="text-sidebarTheme text-xl text-center">
               {" "}
               محصولات مرتبط{" "}
             </p>
