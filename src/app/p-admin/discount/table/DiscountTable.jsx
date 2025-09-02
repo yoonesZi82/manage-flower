@@ -29,7 +29,7 @@ function DiscountTable({ discounts }) {
             (discount) => discountID != discount.id
           );
           setAllDiscounts(newDiscounts);
-          setIsModalOpen(false)
+          setIsModalOpen(false);
           showNotification({
             type: "success",
             message: "پیغام",
@@ -80,7 +80,9 @@ function DiscountTable({ discounts }) {
       title: "نوع تخفیف",
       dataIndex: "access",
       key: "access",
-      render: (_, record) => <>{record.access === 1 ? "خصوصی" : "عمومی"}</>,
+      render: (_, record) => {
+        return <>{record.access === 2 ? "خصوصی" : "عمومی"}</>;
+      },
     },
     {
       title: "حذف",

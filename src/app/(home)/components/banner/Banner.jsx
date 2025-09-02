@@ -14,7 +14,7 @@ function Banner() {
         loop={true}
         navigation={true}
         modules={[Navigation, Autoplay]}
-        className="max-h-[800px] home-slider mySwiper"
+        className="max-h-[850px] home-slider mySwiper"
       >
         <SwiperSlide>
           <img src="/image/banner1.jpg" alt="slid" />

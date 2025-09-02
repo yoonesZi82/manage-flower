@@ -13,11 +13,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        whiteText: "#e4e6b2",
-        darkBrown: "#513D4D",
-        lightBrown: "#513D4D",
-        textBrown: "#513D4D",
-        sidebarTheme: "#513D4D",
+        whiteText: "#1e433c",
+        darkBrown: "#431e24",
+        lightBrown: "#431e24",
+        textBrown: "#431e24",
+        sidebarTheme: "#431e24",
         navbarDashboard: "#ffffff",
         contentDashboard: "#f4f4f4",
         secondary: "#e2dce5",

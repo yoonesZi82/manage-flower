@@ -46,7 +46,7 @@ function CommentsTab({ id, user }) {
               {comments.map((comment) => (
                 <>
                   {comment.isAccept && (
-                    <div className="flex flex-col gap-1 bg-secondary px-3 py-5 rounded-[8px] w-full">
+                    <div className="flex flex-col gap-1 bg-whiteText px-3 py-5 rounded-[8px] w-full">
                       <div className="flex justify-between items-center w-full">
                         <div className="flex gap-2">
                           {comment.user.image ? (
@@ -60,7 +60,7 @@ function CommentsTab({ id, user }) {
                               icon={<PiUserBold size={18} />}
                             />
                           )}
-                          <p className="text-sidebarTheme text-lg">
+                          <p className="text-white text-lg">
                             {" "}
                             {comment.user.name}{" "}
                           </p>
@@ -68,7 +68,7 @@ function CommentsTab({ id, user }) {
                         <Rate disabled defaultValue={comment.score} allowHalf />
                       </div>
                       <div className="w-full">
-                        <p className="text-sidebarTheme">{comment.body}</p>
+                        <p className="text-white">{comment.body}</p>
                       </div>
                     </div>
                   )}

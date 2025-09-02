@@ -45,9 +45,9 @@ const data = {
         50000, 60000,
       ],
       fill: false,
-      backgroundColor: "#513d4d",
-      borderColor: "#513d4d",
-      pointBackgroundColor: "#e2dce5",
+      backgroundColor: "#431e24",
+      borderColor: "#431e24",
+      pointBackgroundColor: "#1e433c",
       tension: 0.1,
     },
   ],
@@ -59,7 +59,7 @@ const options = {
     title: {
       display: true,
       text: "داده‌های فروش",
-      color: "#513d4d",
+      color: "#431e24",
       font: {
         size: 20,
       },
@@ -84,10 +84,10 @@ const options = {
   scales: {
     x: {
       grid: {
-        color: "#513d4d",
+        color: "#431e24",
       },
       ticks: {
-        color: "#513d4d",
+        color: "#431e24",
         font: {
           size: 14,
         },
@@ -95,10 +95,10 @@ const options = {
     },
     y: {
       grid: {
-        color: "#513d4d",
+        color: "#431e24",
       },
       ticks: {
-        color: "#513d4d",
+        color: "#431e24",
         font: {
           size: 14,
         },

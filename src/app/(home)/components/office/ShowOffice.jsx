@@ -7,7 +7,7 @@ const ShowOffice = () => {
     <div className="mx-auto my-0 msx-w-[1222px]">
       <div className="flex flex-col justify-center items-center">
         <p className="text-[36px] text-sidebarTheme"> همکاران ما </p>
-        <span className="text-sidebarTheme">شرکت های جذاب دنیای قهوه</span>
+        <span className="text-sidebarTheme">شرکت های جذاب دنیای کتاب</span>
       </div>
       <main className="my-10">
         <Slider

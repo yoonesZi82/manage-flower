@@ -28,23 +28,23 @@ const ThemeProvider = ({ children }) => {
             fontSize: 16,
           },
           Pagination: {
-            itemBg: "#E2DCE5",
-            itemActiveBg: "#513d4d",
+            itemBg: "#1e433c",
+            itemActiveBg: "#431e24",
           },
           Collapse: {
-            contentBg: "#E2DCE5",
-            headerBg: "#513d4d",
+            contentBg: "#431e24",
+            colorText: "#1e433c",
+            headerBg: "#431e24",
           },
           Table: {
-            headerBg: "#E2DCE5",
-            headerColor: "#513d4d",
-            rowHoverBg: "#E2DCE5",
+            headerBg: "#431e24",
+            headerColor: "#fff",
+            rowHoverBg: "#1e433c",
           },
           Result: {
-            colorTextHeading: "#513d4d",
-            colorText: "#513d4d",
+            colorTextHeading: "#431e24",
+            colorText: "#431e24",
           },
-         
         },
         token: {
           colorPrimary: "#34180e",

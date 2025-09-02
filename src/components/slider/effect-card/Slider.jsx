@@ -46,7 +46,7 @@ export default function Slider({ productID, user }) {
           effect={"cards"}
           grabCursor={true}
           modules={[EffectCards]}
-          className="w-[240px]"
+          className="w-[300px]"
         >
           {products.map((product) => (
             <SwiperSlide key={product.id} className="rounded-[8px]">

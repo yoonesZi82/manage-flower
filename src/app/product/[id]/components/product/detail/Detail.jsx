@@ -97,7 +97,7 @@ function Detail({ id, user }) {
   };
   return (
     <div
-      className="gap-16 mx-auto px-6 desktop:px-[163px] laptop:px-[163px] mobile:px-6 tablet:px-6 pt-[150px] pb-[100px]"
+      className="gap-16 mx-auto px-6 laptop:px-[163px] mobile:px-6 pt-[150px] pb-[100px]"
       data-aos="fade-up"
     >
       <div
@@ -155,7 +155,7 @@ function Detail({ id, user }) {
                   {product.number > 0 ? (
                     <>
                       <div className="flex justify-center items-center gap-1">
-                        <PiSmileyBold color="#513d4d " size={18} />
+                        <PiSmileyBold color="#431e24" size={18} />
                         <p className="font-medium text-sidebarTheme text-sm">
                           {" "}
                           موجود در انبار{" "}
@@ -169,7 +169,7 @@ function Detail({ id, user }) {
                         <Tooltip title="افزودن به علاقه مندی ها">
                           <PiHeartBold
                             size={20}
-                            color="#513d4d "
+                            color="#431e24"
                             className="hover:text-[#dc2626] transition-colors duration-500 cursor-pointer"
                             onClick={addToWishlist}
                           />
@@ -179,7 +179,7 @@ function Detail({ id, user }) {
                   ) : (
                     <>
                       <div className="flex justify-center items-center gap-1">
-                        <PiSmileySadBold color="#513d4d " size={18} />
+                        <PiSmileySadBold color="#431e24" size={18} />
                         <p className="font-medium text-sidebarTheme text-sm">
                           {" "}
                           ناموجود{" "}
@@ -188,7 +188,7 @@ function Detail({ id, user }) {
                       <Tooltip title="افزودن به علاقه مندی ها">
                         <PiHeartBold
                           size={20}
-                          color="#513d4d "
+                          color="#431e24"
                           className="hover:text-[#dc2626] transition-colors duration-500 cursor-pointer"
                         />
                       </Tooltip>

@@ -21,7 +21,7 @@
   --darkBrown: #fff;
   --lightBrown: #fff;
   --textBrown: #fff;
-  --sidebarTheme: #513d4d;
+  --sidebarTheme: #431e24;
   --navbarDashboard: #ffffff;
   --contentDashboard: #f4f4f4;
   --secondary: #e2dce5;
@@ -440,6 +440,9 @@ tbody > tr {
   color: var(--navbarDashboard) !important;
 }
 
+.ant-menu-submenu-title {
+  color: var(--navbarDashboard) !important;
+}
 .ant-menu-item-active::after,
 .ant-menu-submenu-active::after {
   border-color: var(--navbarDashboard) !important;
@@ -465,4 +468,11 @@ tbody > tr {
 
 .ant-result-title {
   color: var(--sidebarTheme) !important;
+}
+
+.ant-upload-list-item-thumbnail {
+  border-radius: 8px !important;
+  & > img {
+    object-fit: cover !important;
+  }
 }
