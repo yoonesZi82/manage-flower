@@ -14,16 +14,28 @@ function Banner() {
         loop={true}
         navigation={true}
         modules={[Navigation, Autoplay]}
-        className="max-h-[850px] home-slider mySwiper"
+        className="min-h-[850px] max-h-[850px] home-slider mySwiper"
       >
-        <SwiperSlide>
-          <img src="/image/banner1.jpg" alt="slid" />
+        <SwiperSlide className="min-h-[850px]">
+          <img
+            src="/image/banner1.jpg"
+            alt="slid"
+            className="h-full min-h-[850px]"
+          />
         </SwiperSlide>
-        <SwiperSlide>
-          <img src="/image/banner2.jpg" alt="slid" />
+        <SwiperSlide className="min-h-[850px]">
+          <img
+            src="/image/banner2.jpg"
+            alt="slid"
+            className="h-full min-h-[850px]"
+          />
         </SwiperSlide>
-        <SwiperSlide>
-          <img src="/image/banner3.jpg" alt="slid" />
+        <SwiperSlide className="min-h-[850px]">
+          <img
+            src="/image/banner3.jpg"
+            alt="slid"
+            className="h-full min-h-[850px]"
+          />
         </SwiperSlide>
       </Swiper>
     </>
