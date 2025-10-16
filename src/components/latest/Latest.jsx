@@ -92,15 +92,15 @@ const Latest = ({ count, pagination, id, wishlist }) => {
       {pagination && !wishlist ? (
         <section className="flex justify-start items-center">
           <div>
-            <p className="text-sidebarTheme text-4xl">همه محصولات</p>
-            <span className="mt-1 text-sidebarTheme">All products</span>
+            <p className="text-secondary text-4xl">همه محصولات</p>
+            <span className="mt-1 text-secondary">All products</span>
           </div>
         </section>
       ) : pagination && wishlist ? (
         <section className="flex justify-start items-center">
           <div>
-            <p className="text-sidebarTheme text-4xl">علاقه مندی ها</p>
-            <span className="mt-1 text-sidebarTheme">Wishlist products</span>
+            <p className="text-secondary text-4xl">علاقه مندی ها</p>
+            <span className="mt-1 text-secondary">Wishlist products</span>
           </div>
         </section>
       ) : (
@@ -112,8 +112,8 @@ const Latest = ({ count, pagination, id, wishlist }) => {
             model={1}
           />
           <div>
-            <p className="text-sidebarTheme text-4xl">آخرین محصولات</p>
-            <span className="mt-1 text-sidebarTheme">Latest products</span>
+            <p className="text-secondary text-4xl">آخرین محصولات</p>
+            <span className="mt-1 text-secondary">Latest products</span>
           </div>
         </section>
       )}
@@ -129,13 +129,13 @@ const Latest = ({ count, pagination, id, wishlist }) => {
         >
           {loading && <Loader />}
           {error && (
-            <p className="font-medium text-sidebarTheme text-2xl"> {error} </p>
+            <p className="font-medium text-secondary text-2xl"> {error} </p>
           )}
           {pagination &&
             !loading &&
             !error &&
             paginatedProducts.length === 0 && (
-              <p className="font-medium text-sidebarTheme text-2xl">
+              <p className="font-medium text-secondary text-2xl">
                 {" "}
                 محصولی برای نمایش وجود ندارد{" "}
               </p>
@@ -159,7 +159,7 @@ const Latest = ({ count, pagination, id, wishlist }) => {
         >
           {loading && <Loader />}
           {error && (
-            <p className="font-medium text-sidebarTheme text-2xl"> {error} </p>
+            <p className="font-medium text-secondary text-2xl"> {error} </p>
           )}
           {pagination &&
             !loading &&
@@ -167,11 +167,11 @@ const Latest = ({ count, pagination, id, wishlist }) => {
             paginatedProducts.length === 0 && (
               <section className="flex flex-col justify-center items-center gap-3 pt-6 w-full">
                 <PiHeartBold size={150} color="#513d4d " />
-                <p className="text-[48px] text-sidebarTheme">محصولی یافت نشد</p>
-                <span className="block text-sidebarTheme">
+                <p className="text-[48px] text-secondary">محصولی یافت نشد</p>
+                <span className="block text-secondary">
                   شما هنوز هیچ محصولی در لیست علاقه مندی های خود ندارید.
                 </span>
-                <span className="block text-sidebarTheme">
+                <span className="block text-secondary">
                   در صفحه "فروشگاه" محصولات جالب زیادی پیدا خواهید کرد.
                 </span>
                 <GlobalBtn
@@ -202,10 +202,10 @@ const Latest = ({ count, pagination, id, wishlist }) => {
         >
           {loading && <Loader />}
           {error && (
-            <p className="font-medium text-sidebarTheme text-2xl"> {error} </p>
+            <p className="font-medium text-secondary text-2xl"> {error} </p>
           )}
           {!loading && !error && products.length === 0 && (
-            <p className="font-medium text-sidebarTheme text-2xl">
+            <p className="font-medium text-secondary text-2xl">
               {" "}
               محصولی برای نمایش وجود ندارد{" "}
             </p>

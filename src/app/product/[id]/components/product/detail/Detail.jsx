@@ -130,23 +130,23 @@ function Detail({ id, user }) {
               />
             </div>
             <main className="flex flex-col gap-10 px-10">
-              <section className="flex flex-col justify-start items-start gap-4 pb-12 border-b-2 border-b-sidebarTheme">
+              <section className="flex flex-col justify-start items-start gap-4 pb-12 border-b-2 border-b-secondary">
                 <p> صفحه اصلی / محصولات / {product.name} </p>
-                <p className="font-medium text-sidebarTheme text-xl">
+                <p className="font-medium text-secondary text-xl">
                   {" "}
                   {product.name}{" "}
                 </p>
                 <div className="flex justify-center items-start gap-4">
                   <Rate disabled defaultValue={score} allowHalf />
-                  <span className="font-medium text-sidebarTheme text-sm">
+                  <span className="font-medium text-secondary text-sm">
                     {" "}
                     تعداد امتیاز دهندگان ({numberUser}){" "}
                   </span>
                 </div>
-                <p className="font-medium text-sidebarTheme text-2xl">
+                <p className="font-medium text-secondary text-2xl">
                   {product.price.toLocaleString()} تومان
                 </p>
-                <p className="text-ls text-sidebarTheme line-clamp-3">
+                <p className="text-ls text-secondary line-clamp-3">
                   {product.shortDescription}
                 </p>
               </section>
@@ -155,8 +155,8 @@ function Detail({ id, user }) {
                   {product.number > 0 ? (
                     <>
                       <div className="flex justify-center items-center gap-1">
-                        <PiSmileyBold color="#431e24" size={18} />
-                        <p className="font-medium text-sidebarTheme text-sm">
+                        <PiSmileyBold color="#DDE3AB" size={18} />
+                        <p className="font-medium text-secondary text-sm">
                           {" "}
                           موجود در انبار{" "}
                         </p>
@@ -169,7 +169,7 @@ function Detail({ id, user }) {
                         <Tooltip title="افزودن به علاقه مندی ها">
                           <PiHeartBold
                             size={20}
-                            color="#431e24"
+                            color="#DDE3AB"
                             className="hover:text-[#dc2626] transition-colors duration-500 cursor-pointer"
                             onClick={addToWishlist}
                           />
@@ -179,8 +179,8 @@ function Detail({ id, user }) {
                   ) : (
                     <>
                       <div className="flex justify-center items-center gap-1">
-                        <PiSmileySadBold color="#431e24" size={18} />
-                        <p className="font-medium text-sidebarTheme text-sm">
+                        <PiSmileySadBold color="#DDE3AB" size={18} />
+                        <p className="font-medium text-secondary text-sm">
                           {" "}
                           ناموجود{" "}
                         </p>
@@ -188,7 +188,7 @@ function Detail({ id, user }) {
                       <Tooltip title="افزودن به علاقه مندی ها">
                         <PiHeartBold
                           size={20}
-                          color="#431e24"
+                          color="#DDE3AB"
                           className="hover:text-[#dc2626] transition-colors duration-500 cursor-pointer"
                         />
                       </Tooltip>
@@ -196,12 +196,12 @@ function Detail({ id, user }) {
                   )}
                 </div>
                 <div className="w-full">
-                  <span className="font-medium text-sidebarTheme text-lg">
+                  <span className="font-medium text-secondary text-lg">
                     {" "}
                     تگ ها :{" "}
                   </span>
                   {product.tags.map((tag) => (
-                    <span className="font-medium text-sidebarTheme text-sm">
+                    <span className="font-medium text-secondary text-sm">
                       {" "}
                       {tag},{" "}
                     </span>
@@ -210,7 +210,7 @@ function Detail({ id, user }) {
                 <div className="flex justify-start items-center gap-4 w-full">
                   <div className="flex justify-center items-center">
                     <Button
-                      className="p-1 border-2 border-sidebarTheme rounded-tl-none rounded-bl-none"
+                      className="p-1 border-2 border-secondary rounded-tl-none rounded-bl-none"
                       icon={<PiMinusBold size={14} />}
                       onClick={() => {
                         count <= 0
@@ -218,11 +218,11 @@ function Detail({ id, user }) {
                           : setCount((prevCount) => prevCount - 1);
                       }}
                     ></Button>
-                    <div className="px-[7px] py-[5px] border-2 border-sidebarTheme border-r-0 border-l-0 text-sidebarTheme text-sm text-center">
+                    <div className="px-[7px] py-[5px] border-2 border-secondary border-r-0 border-l-0 text-secondary text-sm text-center">
                       {count}
                     </div>
                     <Button
-                      className="p-1 border-2 border-sidebarTheme rounded-tr-none rounded-br-none"
+                      className="p-1 border-2 border-secondary rounded-tr-none rounded-br-none"
                       icon={<PiPlusBold size={14} />}
                       onClick={() => setCount((prevCount) => prevCount + 1)}
                     ></Button>
@@ -260,7 +260,7 @@ function Detail({ id, user }) {
       <div className="flex flex-col justify-center items-center gap-4 pt-14">
         {!loading && !error && product && (
           <>
-            <p className="text-sidebarTheme text-xl text-center">
+            <p className="text-secondary text-xl text-center">
               {" "}
               محصولات مرتبط{" "}
             </p>

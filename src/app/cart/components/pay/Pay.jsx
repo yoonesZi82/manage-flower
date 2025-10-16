@@ -16,7 +16,7 @@ function Pay() {
         <header className="flex justify-start items-center gap-2 bg-secondary p-3 rounded-tl-[8px] rounded-tr-[8px] w-full">
           <span>
             {" "}
-            <PiCreditCardBold color="#513d4d" size={22} />{" "}
+            <PiCreditCardBold color="#404517 " size={22} />{" "}
           </span>
           <span className="text-sidebarTheme text-xl"> مبلغ نهایی </span>
         </header>
@@ -36,7 +36,7 @@ function Pay() {
           type="button"
         >
           <div class="top-[4px] left-1 z-10 absolute flex justify-center items-center bg-navbarDashboard rounded-[6px] w-1/4 group-hover:w-[184px] h-8 duration-500">
-            <PiBasketBold size={22} color="#513d4d" />
+            <PiBasketBold size={22} color="#dde3ab " />
           </div>
           <p class="translate-x-2">پرداخت کنید</p>
         </button>

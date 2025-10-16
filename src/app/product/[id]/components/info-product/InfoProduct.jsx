@@ -26,12 +26,12 @@ function InfoProduct({ id }) {
   return (
     <div className="pt-10 w-full">
       {loading && <Loader />}
-      {error && <p className="text-sidebarTheme text-lg">{error}</p>}
+      {error && <p className="text-secondary text-lg">{error}</p>}
       {!loading && !error && (
         <div className="flex flex-col gap-2 w-full">
           <div className="flex justify-between items-center w-full">
-            <p className="text-sidebarTheme">وزن</p>
-            <p className="text-sidebarTheme"> {weight} گرم </p>
+            <p className="text-secondary">وزن</p>
+            <p className="text-secondary"> {weight} گرم </p>
           </div>
         </div>
       )}

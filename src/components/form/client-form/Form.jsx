@@ -4,8 +4,8 @@ import { Alert } from "antd";
 function Form({ title, description, children, handleSubmit, error, loading }) {
   return (
     <>
-      <span className="text-sidebarTheme text-sm"> {title} </span>
-      <p className="mt-4 mb-8 text-[22px] text-sidebarTheme">{description}</p>
+      <span className="text-secondary text-sm"> {title} </span>
+      <p className="mt-4 mb-8 text-[22px] text-secondary">{description}</p>
       <form onSubmit={handleSubmit} className="flex flex-col gap-6 w-full">
         {children}
         <ButtonForm title="ارسال" loading={loading} />

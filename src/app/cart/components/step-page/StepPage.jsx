@@ -103,7 +103,7 @@ function StepPage({ user }) {
         ) : null}
         {current > 0 && (
           <span
-            className="bg-transparent mx-[8px] border-none text-[16px] text-textBrown underline cursor-pointer"
+            className="bg-transparent mx-[8px] border-none text-[16px] text-navbarDashboard underline cursor-pointer"
             onClick={() => prev()}
           >
             برگشت

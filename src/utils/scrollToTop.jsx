@@ -6,7 +6,7 @@ const ScrollToTop = () => {
   return (
     <FloatButton.BackTop
       icon={<PiArrowFatLinesUpFill size={20} />}
-      className="hover:bg-navbarDashboard [&_svg]:hover:!text-sidebarTheme transition-colors duration-500"
+      className="hover:bg-navbarDashboard [&_svg]:hover:!text-secondary transition-colors duration-500"
     />
   );
 };

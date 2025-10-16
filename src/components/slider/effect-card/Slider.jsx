@@ -30,12 +30,12 @@ export default function Slider({ productID, user }) {
       {loading && <Loader />}
       {error && (
         <div className="flex justify-center items-center w-full">
-          <p className="text-sidebarTheme text-center"> {error} </p>
+          <p className="text-secondary text-center"> {error} </p>
         </div>
       )}
       {!loading && !error && products.length === 0 && (
         <div className="flex justify-center items-center w-full">
-          <p className="text-sidebarTheme text-center">
+          <p className="text-secondary text-center">
             {" "}
             محصولی برای نمایش وجود ندارد{" "}
           </p>

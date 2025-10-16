@@ -10,10 +10,10 @@ function NoUser({}) {
         {" "}
         شما وارد حساب خود نشدید{" "}
       </p>
-      <span className="block text-sidebarTheme">
+      <span className="block text-secondary">
         شما میتوانید با وارد شدن به حساب خود محصولات
       </span>
-      <span className="block text-sidebarTheme">
+      <span className="block text-secondary">
         مورد علاقه خود را مشاهده کنید
       </span>
       <GlobalBtn

@@ -103,7 +103,7 @@ function InvoiceBox({ user }) {
         <header className="flex justify-start items-center gap-2 bg-secondary p-3 rounded-tl-[8px] rounded-tr-[8px] w-full">
           <span>
             {" "}
-            <PiCreditCardBold color="#513d4d" size={22} />{" "}
+            <PiCreditCardBold color="#404517 " size={22} />{" "}
           </span>
           <span className="text-sidebarTheme text-xl"> فاکتور پرداختی </span>
         </header>

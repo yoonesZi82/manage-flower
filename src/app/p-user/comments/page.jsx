@@ -25,7 +25,7 @@ const Page = async () => {
           </section>
         ) : (
           <section>
-            <p className="text-sidebarTheme text-xl">کامنتی وجود ندارد</p>
+            <p className="text-secondary text-xl">کامنتی وجود ندارد</p>
           </section>
         )}
       </main>

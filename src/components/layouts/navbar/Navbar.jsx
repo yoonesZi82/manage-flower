@@ -115,7 +115,7 @@ function Navbar({ isLogin }) {
       icon: <PiArticleBold />,
     },
     {
-      label: <Link href={"/cafe-dictionary"}>دیکشنری کتاب</Link>,
+      label: <Link href={"/cafe-dictionary"}>دیکشنری گل</Link>,
       key: "translate-cafe",
       icon: <PiArticleBold />,
     },
@@ -180,7 +180,11 @@ function Navbar({ isLogin }) {
                 },
                 {
                   label: (
-                    <Link href="#" onClick={showModal} className="text-white">
+                    <Link
+                      href="#"
+                      onClick={showModal}
+                      className="text-secondary"
+                    >
                       خروج از حساب کاربری
                     </Link>
                   ),
@@ -212,7 +216,7 @@ function Navbar({ isLogin }) {
           <div className="flex justify-around items-center gap-8 mt-1 text-xl">
             <Link href="/cart">
               <Badge count={orders.length > 0 ? orders.length : 0} size="small">
-                <PiBasketBold size={20} color="#fff" />
+                <PiBasketBold size={20} color="#404517  " />
               </Badge>
             </Link>
             <Link href="/wishlist">
@@ -220,7 +224,7 @@ function Navbar({ isLogin }) {
                 count={wishlist.length > 0 ? wishlist.length : 0}
                 size="small"
               >
-                <PiHeartBold size={20} color="#fff" />
+                <PiHeartBold size={20} color="#404517  " />
               </Badge>
             </Link>
           </div>
@@ -229,7 +233,9 @@ function Navbar({ isLogin }) {
             items={items}
             className="justify-center items-center bg-sidebarTheme shadow-none border-b border-b-none w-[50%] desktop:w-[75%] laptop:w-[75%] mobile:w-[50%] tablet:w-[70%] !text-navbarDashboard [&_li]:!text-navbarDashboard"
           />
-          <p className="font-black text-white text-xl">MY LOVE BOOKS</p>
+          <p className="font-black text-navbarDashboard text-xl">
+            MY LOVE FLOWERS
+          </p>
         </main>
       </div>
       <ShowModal

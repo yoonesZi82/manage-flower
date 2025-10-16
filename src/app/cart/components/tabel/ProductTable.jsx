@@ -96,16 +96,16 @@ const ProductTable = () => {
       dataIndex: "count",
       key: "count",
       render: (text, record) => (
-        <div className="flex justify-center items-center border border-sidebarTheme rounded w-fit">
+        <div className="flex justify-center items-center border border-secondary rounded w-fit">
           <Button
-            className="bg-transparent p-[8px] border-t-0 border-r-0 border-b-0 border-l border-l-sidebarTheme rounded-none"
+            className="bg-transparent p-[8px] border-t-0 border-r-0 border-b-0 border-l border-l-secondary rounded-none"
             onClick={() => updateCount(record.id, -1)}
           >
             <PiMinusBold />
           </Button>
-          <span className="px-[6px] text-sidebarTheme"> {record.count} </span>
+          <span className="px-[6px] text-secondary"> {record.count} </span>
           <Button
-            className="bg-transparent p-[8px] border-t-0 border-r border-r-sidebarTheme border-b-0 border-l-0 rounded-none"
+            className="bg-transparent p-[8px] border-t-0 border-r border-r-secondary border-b-0 border-l-0 rounded-none"
             onClick={() => updateCount(record.id, 1)}
           >
             <PiPlusBold />

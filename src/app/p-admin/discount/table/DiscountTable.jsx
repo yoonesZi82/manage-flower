@@ -90,7 +90,7 @@ function DiscountTable({ discounts }) {
       key: "trash",
       render: (_, record) => (
         <Button
-          className="bg-sidebarTheme hover:bg-navbarDashboard p-5 border-none rounded-[8px] text-navbarDashboard hover:text-sidebarTheme transition-colors duration-500"
+          className="bg-secondary hover:bg-navbarDashboard p-5 border-none rounded-[8px] text-navbarDashboard hover:text-secondary transition-colors duration-500"
           icon={<PiTrashBold size={20} />}
           loading={loading === record.key}
           onClick={() => {

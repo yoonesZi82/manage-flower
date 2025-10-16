@@ -18,13 +18,13 @@
 }
 :root {
   --whiteText: #e4e6b2;
-  --darkBrown: #fff;
-  --lightBrown: #fff;
-  --textBrown: #fff;
-  --sidebarTheme: #431e24;
-  --navbarDashboard: #ffffff;
-  --contentDashboard: #f4f4f4;
-  --secondary: #e2dce5;
+  --darkBrown: #404517;
+  --lightBrown: #404517;
+  --textBrown: #404517;
+  --sidebarTheme: #dde3ab;
+  --navbarDashboard: #404517;
+  --contentDashboard: #404517;
+  --secondary: #404517;
 }
 * {
   box-sizing: border-box;
@@ -35,7 +35,7 @@
 
 ::-webkit-scrollbar {
   width: 7px;
-  background-color: #fff !important;
+  background-color: #404517 !important;
   border-radius: 12px !important;
 }
 
@@ -46,7 +46,7 @@
 
 .form-box::-webkit-scrollbar {
   width: 7px;
-  background-color: #fff !important;
+  background-color: #404517 !important;
   border-radius: 12px !important;
 }
 .form-box::-webkit-scrollbar-thumb {
@@ -112,7 +112,7 @@ a {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  background: #404517;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -158,7 +158,7 @@ a {
 }
 
 .swal-modal {
-  background: #ffffff !important;
+  background: #404517 !important;
   border: 2px solid #711d1c;
 }
 
@@ -167,7 +167,7 @@ a {
 }
 
 .swal-button--confirm {
-  background: #fff;
+  background: #404517;
   color: #711d1c;
 }
 
@@ -179,16 +179,16 @@ a {
 
 .swal-button:not([disabled]):hover {
   box-shadow: none !important;
-  background-color: #efefef !important;
+  background-color: #404517 !important;
 }
 
 .swal-button--cancel:hover {
-  background-color: #e1dede !important;
+  background-color: #404517 !important;
 }
 
 .swal-button--confirm {
   box-shadow: none !important;
-  background: #e9e5e5 !important;
+  background: #404517 !important;
 }
 
 .swal-content__input {
@@ -255,7 +255,7 @@ a {
   height: 20px;
   border-radius: 50%;
   position: absolute;
-  border: 3px solid #77665c;
+  border: 3px solid #404517;
   left: 0;
   right: 0;
   margin-left: auto;
@@ -399,7 +399,7 @@ a {
 }
 
 .ant-result-subtitle {
-  color: var(--sidebarTheme) !important;
+  color: var(--navbarDashboard) !important;
 }
 /* end style result */
 

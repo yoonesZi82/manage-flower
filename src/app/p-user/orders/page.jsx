@@ -10,7 +10,7 @@ async function page() {
       howUser={user.role === "ADMIN" ? "ADMIN" : "USER"}
     >
       <div className="flex justify-center items-center w-full h-full">
-        <p className="text-sidebarTheme text-xl"> صفحه در دست ساخت است </p>
+        <p className="text-secondary text-xl"> صفحه در دست ساخت است </p>
       </div>
     </DashboardLayout>
   );

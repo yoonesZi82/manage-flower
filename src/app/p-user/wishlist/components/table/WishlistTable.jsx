@@ -120,7 +120,7 @@ export default function WishlistTable({ wishlists, user }) {
       pagination={{ pageSize: 5 }}
       expandable={{
         expandedRowRender: (record) => (
-          <p className="m-0 text-sidebarTheme line-clamp-2">
+          <p className="m-0 text-secondary line-clamp-2">
             {record.description}
           </p>
         ),

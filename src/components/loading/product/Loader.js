@@ -11,7 +11,7 @@ function Loader() {
         ariaLabel="hourglass-loading"
         wrapperStyle={{}}
         wrapperClass=""
-        colors={["#513d4d", "#E2DCE5"]}
+        colors={["#dde3ab", "#404517 "]}
       />
     </div>
   );
@@ -27,7 +27,7 @@ function ColorRingLoader() {
         ariaLabel="color-ring-loading"
         wrapperStyle={{}}
         wrapperClass="color-ring-wrapper"
-        colors={["#4b382a"]}
+        colors={["#dde3ab"]}
       />
     </div>
   );

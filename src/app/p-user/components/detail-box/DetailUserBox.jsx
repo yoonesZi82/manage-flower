@@ -7,10 +7,10 @@ function DetailUserBox({ children, titleButton, title }) {
   return (
     <div className="flex flex-col bg-sidebarTheme rounded-[8px] w-full h-full overflow-auto">
       <div className="flex justify-between items-center p-5 w-full">
-        <p className="text-base text-navbarDashboard">{title}</p>
+        <p className="text-navbarDashboard text-base">{title}</p>
         <Link href="/p-user/tickets">
           <Button
-            className="flex flex-row-reverse bg-sidebarTheme hover:bg-navbarDashboard border-none text-navbarDashboard hover:text-sidebarTheme transition-colors duration-500 outline-none"
+            className="flex flex-row-reverse bg-sidebarTheme hover:bg-navbarDashboard border-none outline-none text-navbarDashboard hover:text-sidebarTheme transition-colors duration-500"
             icon={<PiArrowLeftBold size={20} />}
           >
             {titleButton}

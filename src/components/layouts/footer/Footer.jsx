@@ -39,7 +39,7 @@ const Footer = () => {
           href={"/cafe-dictionary"}
           className="text-navbarDashboard link link-hover"
         >
-          دیکشنری کتاب
+          دیکشنری گل
         </Link>
         <Link href={"/blogs"} className="text-navbarDashboard link link-hover">
           وبلاگ ها

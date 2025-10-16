@@ -12,13 +12,13 @@ const OffCodeInput = ({ control, error, loading, disable }) => {
           <div className="flex justify-center items-center bg-navbarDashboard py-1 pl-2 border-none rounded-[8px] w-full">
             <Input
               size="large"
-              className="bg-transparent focus:shadow-none pr-[15px] border-none focus:border-none text-sidebarTheme outline-none"
+              className="bg-transparent focus:shadow-none pr-[15px] border-none focus:border-none outline-none text-sidebarTheme placeholder:!text-sidebarTheme"
               placeholder="کد تخفیف*"
               {...field}
             />
             <Button
               htmlType="submit"
-              className="bg-sidebarTheme hover:bg-navbarDashboard px-5 border-none rounded-[8px] text-navbarDashboard hover:text-sidebarTheme transition-colors duration-500 outline-none"
+              className="bg-sidebarTheme hover:bg-navbarDashboard px-5 border-none rounded-[8px] outline-none text-navbarDashboard hover:text-sidebarTheme transition-colors duration-500"
               loading={loading}
               disabled={disable}
             >

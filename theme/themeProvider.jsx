@@ -12,14 +12,15 @@ const ThemeProvider = ({ children }) => {
         components: {
           Menu: {
             iconSize: 16,
-            itemColor: "#fff",
-            itemHoverColor: "#fff",
-            horizontalItemSelectedColor: "#fff",
+            itemColor: "#404517",
+            itemHoverColor: "#404517",
+            horizontalItemSelectedColor: "#404517",
             itemSelectedBg: "rgba(0, 0, 0, 0.1)",
-            itemSelectedColor: "#fff",
-            darkItemBg: "#fff",
+            itemSelectedColor: "#404517",
+            darkItemBg: "#404517",
             fontSize: 16,
           },
+
           Statistic: {
             contentFontSize: 16,
             titleFontSize: 12,
@@ -28,22 +29,22 @@ const ThemeProvider = ({ children }) => {
             fontSize: 16,
           },
           Pagination: {
-            itemBg: "#1e433c",
-            itemActiveBg: "#431e24",
+            itemBg: "#404517",
+            itemActiveBg: "#DDE3AB",
           },
           Collapse: {
-            contentBg: "#431e24",
-            colorText: "#1e433c",
-            headerBg: "#431e24",
+            contentBg: "#DDE3AB",
+            colorText: "#404517",
+            headerBg: "#DDE3AB",
           },
           Table: {
-            headerBg: "#431e24",
-            headerColor: "#fff",
-            rowHoverBg: "#1e433c",
+            headerBg: "#DDE3AB",
+            headerColor: "#404517",
+            rowHoverBg: "#404517",
           },
           Result: {
-            colorTextHeading: "#431e24",
-            colorText: "#431e24",
+            colorTextHeading: "#404517",
+            colorText: "#404517",
           },
         },
         token: {
